@@ -7,8 +7,12 @@ android {
     compileSdkVersion 31
     buildToolsVersion "30.0.1"
 
+    buildFeatures{
+        viewBinding true
+    }
+
     defaultConfig {
-        applicationId "kr.co.korearental.viewpagerview"
+        applicationId "kr.co.korearental.fragment_1_3"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
@@ -16,11 +20,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    buildFeatures
-            {
-                viewBinding = true
-            }
 
     buildTypes {
         release {
@@ -38,7 +37,14 @@ android {
 }
 
 dependencies {
-
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    def fragment_version = "1.4.0"
+    // Java language implementation
+    implementation "androidx.fragment:fragment:$fragment_version"
+    // Kotlin
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    // Testing Fragments in Isolation
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'

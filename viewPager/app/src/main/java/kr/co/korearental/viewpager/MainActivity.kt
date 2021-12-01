@@ -1,10 +1,10 @@
-package kr.co.korearental.viewpagerview
+package kr.co.korearental.viewpager
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import com.google.android.material.tabs.TabLayoutMediator
-import kr.co.korearental.viewpager.*
+import kr.co.korearental.viewpager.databinding.ActivityMainBinding
 
 class MainActivity : FragmentActivity() {
 
