@@ -22,7 +22,7 @@ class ListFragment : Fragment() {
         binding.btnNext.setOnClickListener { mainActivity?.goDetail() }
 
         binding.textTitle.text = arguments?.getString("key1")
-        binding.textValue.text = "${arguments?.getInt("key2")}"
+        binding.textValue.text = "${arguments?.getInt("key2")}" //정수형은 문자열 템플릿을 이용해서 값을 입력해야 함
 
         return binding.root
     }
