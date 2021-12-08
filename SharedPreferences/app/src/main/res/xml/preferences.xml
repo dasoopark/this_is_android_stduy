@@ -34,7 +34,7 @@
             android:title="목록 선택형"
             android:summary="목록"
             android:entries="@array/action_list"
-            android:entryValues="@array/action_values"
+            android:entryValues="@xarray/action_values"
             android:dialogTitle="목록 선택 제목"
             app:iconSpaceReserved="false"/>
         <PreferenceScreen
