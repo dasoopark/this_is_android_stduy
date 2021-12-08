@@ -8,7 +8,7 @@ import androidx.room.Query
 
 @Dao
 interface RoomMemoDao {
-    @Query("select * from room_memo")
+    @Query("select * from room_memo")ccc
     fun getAll(): List<RoomMemo>
 
     @Insert(onConflict = REPLACE)
