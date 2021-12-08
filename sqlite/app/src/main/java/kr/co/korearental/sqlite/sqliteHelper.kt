@@ -60,7 +60,7 @@ class SqliteHelper(context: Context, name: String, version: Int) :
         values.put("datetime", memo.datetime)
 
         val wd = writableDatabase
-        wd.update("memo", values, "no = ${memo.no}", null)
+        wd.update("memo", values, "no = ${memo.no}", null) //테이블명, 수정할 값, 수정할 조건
         wd.close()
     }
 

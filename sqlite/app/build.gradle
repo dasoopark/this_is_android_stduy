@@ -7,6 +7,11 @@ android {
     compileSdkVersion 31
     buildToolsVersion "30.0.1"
 
+    buildFeatures
+            {
+                viewBinding = true
+            }
+
     defaultConfig {
         applicationId "kr.co.korearental.sqlite"
         minSdkVersion 21
