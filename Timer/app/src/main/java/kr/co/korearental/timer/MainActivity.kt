@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
+import kotlinx.coroutines.CoroutineScope
 import kr.co.korearental.timer.databinding.ActivityMainBinding
 import kotlin.concurrent.thread
+import kotlin.coroutines.CoroutineContext
 
 class MainActivity : AppCompatActivity() {
 
