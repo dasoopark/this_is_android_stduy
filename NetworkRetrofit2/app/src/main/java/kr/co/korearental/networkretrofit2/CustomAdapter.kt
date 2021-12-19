@@ -1,10 +1,12 @@
-package kr.co.korearental.networkretrofit
+package kr.co.korearental.networkretrofit2
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import kr.co.korearental.networkretrofit.databinding.ItemRecyclerBinding
+import kr.co.korearental.networkretrofit2.databinding.ItemRecyclerBinding
+import kr.co.korearental.networkretrofit2.Repository
+import kr.co.korearental.networkretrofit2.RepositoryItem
 
 class CustomAdapter: RecyclerView.Adapter<Holder>() {
     var userList : Repository? = null
@@ -24,7 +26,7 @@ class CustomAdapter: RecyclerView.Adapter<Holder>() {
     }
 }
 class Holder(val binding: ItemRecyclerBinding): RecyclerView.ViewHolder(binding.root){
-    fun setUser(user:RepositoryItem?) {
+    fun setUser(user: RepositoryItem?) {
         user?.let {
             binding.textName.text = it.name
             binding.textId.text = it.node_id

@@ -1,4 +1,4 @@
-package kr.co.korearental.networkretrofit
+package kr.co.korearental.networkretrofit2
 
 data class License(
     val key: String,

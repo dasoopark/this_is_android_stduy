@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-kapt'
 }
 
 android {
@@ -13,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "kr.co.korear ental.networkretrofit"
+        applicationId "kr.co.korearental.networkretrofit2"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
@@ -44,6 +43,7 @@ dependencies {
 // annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0' // < 동작안함
 
 
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
