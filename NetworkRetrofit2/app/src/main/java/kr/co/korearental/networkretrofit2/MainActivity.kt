@@ -24,8 +24,10 @@ class MainActivity: AppCompatActivity() {
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
+
         val retrofit = Retrofit.Builder()
                 .baseUrl("https://api.github.com/")
+
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
